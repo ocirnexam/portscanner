@@ -53,7 +53,7 @@ void check_single_port(char *ip, int port)
     s_info.address_info = address_info;
     s_info.ip = ip;
     s_info.port = port;
-    print_port_status(&s_info, PRINT_CLOSED_PORT_FALSE);
+    print_port_status(&s_info, PRINT_CLOSED_PORT_TRUE);
     close(socket_nr);
 }
 
